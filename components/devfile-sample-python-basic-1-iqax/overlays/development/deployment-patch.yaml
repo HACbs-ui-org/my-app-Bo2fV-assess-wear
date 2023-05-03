@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-1-iqax
+  namespace: bcook-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/bcook-tenant/my-app/devfile-sample-python-basic-1-iqax@sha256:1e663f80415465cd4b6281daf9f41694f7c88af497fe6d4574f0de436b7236f4
+        name: my-python
+        resources: {}
+status: {}
